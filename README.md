@@ -1,17 +1,33 @@
-# Frequency-Reconstruction
-Collection of scripts used to reconstruct missing frequency bands
+# README - Frequency Interpolation (Sam Tuppen)
 
-# To do
-Create script as .py that does everything by simply changing some parameters. Maybe it would be fun to make something with a UI? Not sure how doable that is.
-# Basic Codes
-* MATLAB:<br>
- 1. `TVNorm_SparseReg.m` is the implementation of TV norms in MATLAB<br>
- 2. Other MATLAB codes are superseded by Python alternatives.<br>
-* Python:
- 1. `Full U-Net code in Python (CA-Unet).ipynb` is the most updated **Neural network**.
- 2.  
+There are two different sections for interpolating missing frequency bands. The first is an approach using a neural network (NN) and the second is the sparse solver (SS) approach. The NN has been created in Python using the TensorFlow platform and the SS has been created in both Python and MATLAB.
+
+# NEURAL NETWORK SECTION:
+
+To run the NN you will need:
+- TensorFlow
+- NumPy
+- Matplotlib
+- SciPy
+- tqdm (for plotting the loading bars)
+
+_(To run the network on your graphics card you will need to install additional software, for example CUDA, that is available to find in the TensorFlow documentation.)_
 
 
-# Modules used
+# SPARSE SOLVER SECTION:
 
-# Usage
+## MATLAB:
+To run the MATLAB code you will need to install CVX, which can be downloaded using the following link: 
+http://cvxr.com/cvx/download/
+
+There are several scripts:
+1. `TVNorm_SparseReg.m`: Reconstruct one missing frequency band for one trace
+2. `TVNorm_SparseReg_multiple_gaps.m`: Reconstructs multiple missing frequency bands for one trace
+
+
+## Python:
+To Run the Python code you will need the following packages:
+- cvxpy
+- NumPy
+- Matplotlib
+- SciPy
