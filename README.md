@@ -4,7 +4,7 @@ There are two different sections for interpolating missing frequency bands. The 
 
 # NEURAL NETWORK SECTION:
 
-To run the NN you will need:
+To run the NN you will need (Python):
 - TensorFlow
 - NumPy
 - Matplotlib
