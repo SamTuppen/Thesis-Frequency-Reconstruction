@@ -19,7 +19,7 @@ There are several scripts:
 3. 
 
 Note: I intend to make these into `.py` files once everything runs correctly.  
-Several of the above scripts have a CA-Unet sections, with is a Coordinate Attentive block that replaces the encoding blocks in the standard U-Net. These blocks increase the training time, but help the network become more spatially aware of surrounding traces. In general I did not observe a great improvement, but I have left them in the code (commented out) in case anyone is interested in trying them.
+Several of the above scripts have a CA-Unet sections, with is a Coordinate Attentive block that replaces the encoding blocks in the standard U-Net. These blocks increase the training time, but help the network become more spatially aware of surrounding traces. In general I did not observe a great improvement, but I have left them in the code (commented out) in case anyone is interested in trying them. Original code in pyTorch: https://github.com/Andrew-Qibin/CoordAttention.
 
 # SPARSE SOLVER SECTION:
 
