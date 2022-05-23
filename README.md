@@ -1,4 +1,4 @@
-# README - Frequency Interpolation (Sam Tuppen)
+# README - Frequency Interpolation
 
 There are two different sections for interpolating missing frequency bands. The first is an approach using a neural network (NN) and the second is the sparse solver (SS) approach. The NN has been created in Python using the TensorFlow platform and the SS has been created in both Python and MATLAB.
 
@@ -10,6 +10,7 @@ To run the NN you will need (Python):
 - Matplotlib
 - SciPy
 - tqdm (for plotting the loading bars)
+- segyio (for loading the seismic data)
 
 _(To run the neural network on your graphics card you will need to install additional software, for example CUDA, that is available to find in the TensorFlow documentation: https://www.tensorflow.org/install/pip)_
 
@@ -20,6 +21,16 @@ There are several scripts:
 
 Note: I intend to make these into `.py` files once everything runs correctly.  
 Several of the above scripts have a CA-Unet sections, with is a Coordinate Attentive block that replaces the encoding blocks in the standard U-Net. These blocks increase the training time, but help the network become more spatially aware of surrounding traces. In general I did not observe a great improvement, but I have left them in the code (commented out) in case anyone is interested in trying them. Original code in pyTorch: https://github.com/Andrew-Qibin/CoordAttention.
+
+The structure of the U-Net is as follows:  
+<p align="center">
+  <img 
+    width="430"
+    height="350"
+    src="https://user-images.githubusercontent.com/93287046/169788922-bc895f53-c690-4836-9a4d-a4ad10a5b287.png"
+  >
+</p>
+
 
 # SPARSE SOLVER SECTION:
 
