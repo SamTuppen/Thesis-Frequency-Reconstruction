@@ -11,8 +11,15 @@ To run the NN you will need (Python):
 - SciPy
 - tqdm (for plotting the loading bars)
 
-_(To run the network on your graphics card you will need to install additional software, for example CUDA, that is available to find in the TensorFlow documentation.)_
+_(To run the neural network on your graphics card you will need to install additional software, for example CUDA, that is available to find in the TensorFlow documentation: https://www.tensorflow.org/install/pip)_
 
+There are several scripts:
+1. `Full U-Net FBW.ipynb`: NN code with Filtering Before Windowing (FBW)
+2. `Full U-Net FAW.ipynb`: NN code with Filtering After Windowing (FAW), this code is mainly used when we wish to completely zero the missing frequency bands.
+3. 
+
+Note: I intend to make these into `.py` files once everything runs correctly.
+Several of the above scripts have a CA-Unet sections, with is a Coordinate Attentive block that replaces the encoding blocks in the standard U-Net. These blocks increase the training time, but help the network become more spatially aware of surrounding traces. In general I did not observe a great improvement, but I have left them in the code (commented out) in case anyone is interested in trying them.
 
 # SPARSE SOLVER SECTION:
 
@@ -31,3 +38,5 @@ To Run the Python code you will need the following packages:
 - NumPy
 - Matplotlib
 - SciPy
+
+
