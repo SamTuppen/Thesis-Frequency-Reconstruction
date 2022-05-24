@@ -38,7 +38,7 @@ The structure of the U-Net is as follows:
 
 
 # SPARSE SOLVER SECTION:
-The sparse solver approach is an implementation of the scheme presented by [Wang, R. & Herrmann, F.](https://doi.org/10.1190/segam2016-13879674.1).
+The sparse solver approach is an implementation of the scheme presented by [Wang, R. & Herrmann, F.](https://doi.org/10.1190/segam2016-13879674.1).  
 ## MATLAB:
 To run the MATLAB code you will need to install CVX, which can be downloaded using the following link: 
 http://cvxr.com/cvx/download/  
@@ -47,6 +47,15 @@ You will also need [SegyMAT](http://segymat.sourceforge.net/), which is used to 
 There are several scripts:
 1. `TVNorm_SparseReg.m`: Reconstruct one missing frequency band for one trace
 2. `TVNorm_SparseReg_multiple_gaps.m`: Reconstructs multiple missing frequency bands for one trace
+
+The MATLAB scripts are structured as follows:
+1. Define survey parameters
+2. Specify file location
+3. Load the data
+4. Specify which frequencies are known and which are unknown
+5. Filter the data to create missing frequency band that must be interpolated
+6. Compute sparse 'reflectivity' of the gather
+7. The interpolated band is added to the sparse spectrum to complete the spectrum
 
 
 ## Python:
