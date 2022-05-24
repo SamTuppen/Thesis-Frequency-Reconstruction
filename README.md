@@ -1,6 +1,10 @@
 # README - Frequency Interpolation
 
-There are two different sections for interpolating missing frequency bands. The first is an approach using a neural network (NN) and the second is the sparse solver (SS) approach. The NN has been created in Python using the TensorFlow platform and the SS has been created in both Python and MATLAB.
+There are two different sections for interpolating missing frequency bands. The first is an approach using a neural network (NN) and the second is the sparse solver (SS) approach. The NN has been created in Python using the TensorFlow platform and the SS has been created in both Python and MATLAB.  
+
+---
+
+In their current state, the following methods are set to interpolate the frequency data of a dataset called `NoSI_short.segy`, which is a cropped version of `NoSI.segy`. The dataset can be downloaded at: .
 
 # NEURAL NETWORK SECTION:
 
@@ -34,10 +38,11 @@ The structure of the U-Net is as follows:
 
 
 # SPARSE SOLVER SECTION:
-
+The sparse solver approach is an implementation of the scheme presented by [Wang, R. & Herrmann, F.](https://doi.org/10.1190/segam2016-13879674.1).
 ## MATLAB:
 To run the MATLAB code you will need to install CVX, which can be downloaded using the following link: 
-http://cvxr.com/cvx/download/
+http://cvxr.com/cvx/download/  
+You will also need [SegyMAT](http://segymat.sourceforge.net/), which is used to read the seismic data in MATLAB.
 
 There are several scripts:
 1. `TVNorm_SparseReg.m`: Reconstruct one missing frequency band for one trace
