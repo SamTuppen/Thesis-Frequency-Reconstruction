@@ -1,6 +1,6 @@
 # README - Frequency Interpolation
 
-There are two different sections for interpolating missing frequency bands. The first is an approach using a neural network (NN) and the second is the sparse solver (SS) approach. The NN has been created in Python using the TensorFlow platform and the SS has been created in both Python and MATLAB.  
+Two different methods to interpolate missing frequency bands are presented in this folder. The first is an approach using a neural network (NN) and the second is a sparse solver (SS) approach. The NN has been created in Python using the TensorFlow platform and the SS has been created in both Python and MATLAB.  
 
 ---
 
