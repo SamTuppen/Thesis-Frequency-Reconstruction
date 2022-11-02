@@ -47,7 +47,7 @@ The structure of the U-Net is as follows:
 
 # SPARSE SOLVER SECTION:
 The sparse solver approach is an implementation of the scheme presented by [Wang, R. & Herrmann, F.](https://doi.org/10.1190/segam2016-13879674.1).  
-## MATLAB:
+
 To run the MATLAB code you will need to install CVX, which can be downloaded using the following link: 
 http://cvxr.com/cvx/download/  
 You will also need [SegyMAT](http://segymat.sourceforge.net/), which is used to read the seismic data in MATLAB.
