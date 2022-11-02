@@ -1,6 +1,6 @@
 # README - Frequency Band Interpolation
 
-Two different methods to interpolate missing frequency bands are presented in this folder. The first is an approach using a neural network (NN) and the second is a sparse solver (SS) approach. The NN has been created in Python using the TensorFlow platform and the SS has been created in both Python and MATLAB.  
+Two different methods to interpolate missing frequency bands are presented in this folder. The first is an approach using a neural network (NN) and the second is a sparse solver (SS) approach. The NN has been created in Python using the TensorFlow platform and the SS has been created in MATLAB.  
 
 Both methods have been tested for the 
 ---
@@ -55,7 +55,7 @@ There are several scripts:
 6. `taup_example.m`: Example file of taup transform
 7. `NoSI_200.segy`: 200th shot gather of the above metioned dataset.
 
-The MATLAB scripts are structured as follows:
+The MATLAB interpolation scripts are structured as follows:
 1. Define survey parameters
 2. Specify file location
 3. Load the data
@@ -63,13 +63,5 @@ The MATLAB scripts are structured as follows:
 5. Filter the data to create missing frequency band that must be interpolated
 6. Compute sparse 'reflectivity' of the gather
 7. The interpolated band is added to the sparse spectrum to complete the spectrum
-
-
-## Python:
-To Run the Python code you will need the following packages:
-- cvxpy
-- NumPy
-- Matplotlib
-- SciPy
 
 
