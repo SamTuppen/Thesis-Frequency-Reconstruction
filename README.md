@@ -6,6 +6,7 @@ Both methods have been tested for the
 ---
 
 In their current state, the following methods are set to interpolate the frequency data of a dataset called `NoSI_short.segy`, which is a cropped version of the original `SP_VQH_044_S1C12.segy` dataset.
+Furthermore, this `CroppingInputData.m` h been included to generate the training and test samples for the neural network. It will be necessary to run this script prior to running the network.
 
 # NEURAL NETWORK SECTION:
 
@@ -47,7 +48,12 @@ You will also need [SegyMAT](http://segymat.sourceforge.net/), which is used to 
 
 There are several scripts:
 1. `Sparse_Solver_Time_Domain.m`: Reconstruct purely in the time domain
-2. `Sparse_Solver_Time_Domain.m`: Reconstructs in the tau-p domain
+2. `Sparse_Solver_Taup_Domain.m`: Reconstructs in the tau-p domain
+3. `gather200_timeRecon.mat`: This is a data file of a time domain reconstruction with 10% noise
+4. `gather200_timeRecon_no_noise.mat`: This is a data file of a time domain reconstruction
+5. `gather200_TaupRecon.mat`: This is a data file of a taup domain reconstruction with 10% noise
+6. `taup_example.m`: Example file of taup transform
+7. `NoSI_200.segy`: 200th shot gather of the above metioned dataset.
 
 The MATLAB scripts are structured as follows:
 1. Define survey parameters
