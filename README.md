@@ -6,7 +6,7 @@ Both methods have been tested for the
 ---
 
 In their current state, the following methods are set to interpolate the frequency data of a dataset called `NoSI_short.segy`, which is a cropped version of the original `SP_VQH_044_S1C12.segy` dataset.
-Furthermore, this `CroppingInputData.m` h been included to generate the training and test samples for the neural network. It will be necessary to run this script prior to running the network.
+Furthermore,`CroppingInputData.m` has been included to generate the training and test samples for the neural network. It will be necessary to run this script prior to running the network.
 
 # NEURAL NETWORK SECTION:
 
