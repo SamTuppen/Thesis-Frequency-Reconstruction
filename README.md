@@ -46,8 +46,8 @@ http://cvxr.com/cvx/download/
 You will also need [SegyMAT](http://segymat.sourceforge.net/), which is used to read the seismic data in MATLAB.
 
 There are several scripts:
-1. `TVNorm_SparseReg.m`: Reconstruct one missing frequency band for one trace
-2. `TVNorm_SparseReg_multiple_gaps.m`: Reconstructs multiple missing frequency bands for one trace
+1. `Sparse_Solver_Time_Domain.m`: Reconstruct purely in the time domain
+2. `Sparse_Solver_Time_Domain.m`: Reconstructs in the tau-p domain
 
 The MATLAB scripts are structured as follows:
 1. Define survey parameters
