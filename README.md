@@ -5,7 +5,7 @@ Two different methods to interpolate missing frequency bands are presented in th
 Both methods have been tested for the 
 ---
 
-In their current state, the following methods are set to interpolate the frequency data of a dataset called `NoSI_short.segy`, which is a cropped version of `NoSI.segy`. The dataset can be downloaded at: .
+In their current state, the following methods are set to interpolate the frequency data of a dataset called `NoSI_short.segy`, which is a cropped version of `NoSI.segy`. The original dataset is called `SP_VQH_044_S1C12.segy`.
 
 # NEURAL NETWORK SECTION:
 
