@@ -31,7 +31,7 @@ Structure of the code:
 - Make predictions
 - QC
 
-Within the above script, a CA-Unet section can be found, with is a Coordinate Attentive block that replaces the encoding blocks in the standard U-Net. These blocks increase the training time, but help the network become more spatially aware of surrounding traces. In general I did not observe a great improvement, but I have left them in the code (commented out) in case anyone is interested in trying them. Original code in pyTorch: https://github.com/Andrew-Qibin/CoordAttention.  
+Within the above script, a CA-Unet section can be found, which is a Coordinate Attentive block that replaces the encoding blocks in the standard U-Net. These blocks increase the training time, but help the network become more spatially aware of surrounding traces. In general I did not observe a great improvement, but I have left them in the code (commented out) in case anyone is interested in trying them. Original code in pyTorch: https://github.com/Andrew-Qibin/CoordAttention.  
 Furthermore, the paper in which I found them being used on seismic data is: [Li, X., Wu, B., Zhu, X., & Yang, H. (2021). Consecutively Missing Seismic Data Interpolation based on Coordinate Attention Unet. _IEEE Geoscience and Remote Sensing Letters_, 19, 1-5](https://ieeexplore.ieee.org/document/9615194).
 
 The structure of the U-Net is as follows:  
